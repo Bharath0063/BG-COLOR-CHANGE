@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    let count=0
+    var content=document.getElementsByClassName("content")
+    var colour=document.getElementsByTagName("span")
+    var text=document.getElementsByTagName("h1")
+    var bttn=document.getElementsByTagName("button")
+    function update(){
+        let arr=['violet','blue','green','yellow','brown']
+        content[0].style.backgroundColor=arr[count]
+        bttn[0].style.backgroundColor=arr[count]
+        text[0].style.backgroundColor=arr[count]
+        colour[0].innerText=arr[count]
+        count++
+        if(count>=5)
+            count=0
+    }
+   
+</script>
+<body>
+    <div class="content">
+        
+            <h1> backgroundColor</h1><span>red</span></h1>
+            <button onclick="update()">click here to change Color</button>
+        
+    </div>
+</body>
+</html>

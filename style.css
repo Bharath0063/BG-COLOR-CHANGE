@@ -1,0 +1,17 @@
+.content{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+}
+button{
+    padding: 3px 7px 3px 7px;
+    border: 2px solid black ;
+}
+body{
+    font-size: 30px;
+}
